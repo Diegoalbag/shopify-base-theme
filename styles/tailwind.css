@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+
+.icon{
+    @apply text-4xl text-gray-400 hover:text-black mx-4
+}
+
+.hero-bg{
+    background-image: url('../assets/hero.jpg')
+}
+.featured-0-bg{
+    background-image: url('../assets/featured-0.jpg')
+}
+.featured-1-bg{
+    background-image: url('../assets/featured-1.jpg')
+}
+.featured-3-bg{
+    background-image: url('../assets/featured-3.jpg')
+}
+@tailwind utilities;
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

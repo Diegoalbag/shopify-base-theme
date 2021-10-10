@@ -6,11 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "shopify theme serve",
-    "sass": "node-sass --watch --recursive  sass/global.scss assets/application.css.liquid"
+    "build:css": "postcss styles/tailwind.css -o assets/application.css"
   },
   "author": "Diego Alba",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.16"
   }
 }
